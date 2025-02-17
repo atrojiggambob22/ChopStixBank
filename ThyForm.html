@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+<link rel="stylesheet" href="ThyForm.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Get Started With US</h2>
+        <form action="mailto:Eedykamana75@gmail.com" method="post" enctype="text/plain">
+            <label for="title">Title:</label>
+            <select id="title" name="title" required>
+                <option value="">- Select Title -</option>
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="ms">Ms.</option>
+                <option value="miss">Miss.</option>
+                <option value="dr">Dr.</option>
+                <option value="prof">Prof.</option>
+            </select>
+
+            <div class="two-columns">
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div>
+                    <label for="middleName">Middle Name:</label>
+                    <input type="text" id="middleName" name="middleName">
+                </div>
+            </div>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address">Home Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">- Select Country -</option>
+                <option value="AF">Afghanistan</option>
+                <option value="AL">Albania</option>
+                <option value="DZ">Algeria</option>
+                <option value="AD">Andorra</option>
+                <option value="AO">Angola</option>
+                <option value="AR">Argentina</option>
+                <option value="AM">Armenia</option>
+                <option value="AU">Australia</option>
+                <option value="AT">Austria</option>
+                <option value="AZ">Azerbaijan</option>
+                <option value="BH">Bahrain</option>
+                <option value="BD">Bangladesh</option>
+                <option value="BE">Belgium</option>
+                <option value="BR">Brazil</option>
+                <option value="CA">Canada</option>
+                <option value="CN">China</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+                <option value="IN">India</option>
+                <option value="IT">Italy</option>
+                <option value="JP">Japan</option>
+                <option value="NG">Nigeria</option>
+                <option value="RU">Russia</option>
+                <option value="ES">Spain</option>
+                <option value="GB">United Kingdom</option>
+                <option value="US">United States</option>
+                <!-- Add more countries here -->
+            </select>
+
+            <label for="nationality">Nationality:</label>
+            <select id="nationality" name="nationality" required>
+                <option value="">- Select Nationality -</option>
+                <option value="Afghan">Afghan</option>
+                <option value="Albanian">Albanian</option>
+                <option value="Algerian">Algerian</option>
+                <option value="American">American</option>
+                <option value="Australian">Australian</option>
+                <option value="Brazilian">Brazilian</option>
+                <option value="British">British</option>
+                <option value="Canadian">Canadian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="French">French</option>
+                <option value="German">German</option>
+                <option value="Indian">Indian</option>
+                <option value="Italian">Italian</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Nigerian">Nigerian</option>
+                <option value="Russian">Russian</option>
+                <option value="Spanish">Spanish</option>
+                <!-- Add more nationalities here -->
+            </select>
+
+            <label for="maritalStatus">Marital Status:</label>
+            <select id="maritalStatus" name="maritalStatus" required>
+                <option value="">- Select -</option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>
+            </select>
+
+            <label for="dependents">Number of Dependents:</label>
+            <input type="number" id="dependents" name="dependents" required>
+
+            <div class="mb-4">
+                <label for="document" >Upload Document</label>
+                <input type="file" id="document" style="border: none; background-color: orange;">
+            </div>
+
+            <label for="residenceStatus">Residence Status:</label>
+            <input type="text" id="residenceStatus" name="residenceStatus" required>
+
+            <label for="referral">Referral:</label>
+            <input type="text" id="referral" name="referral">
+
+            <div class="buttons" style="align-items: center; text-align: center; ">
+                <button type="submit" style="padding: 10px 140px;">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

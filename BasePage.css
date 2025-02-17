@@ -1,0 +1,504 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: #f0f0f0; /* Example background color */
+    padding:13px;
+    margin: 0px 90px;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    /* margin-top: 40px; */
+    
+}
+.caslls{
+    padding: 10px 40px;
+    background-color: orange;
+    border-radius: 10px;
+    color: black;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.main-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal on larger screens */
+}
+
+.main-nav li {
+    position: relative; /* For dropdown positioning */
+    margin: 0 10px; /* Space between items */
+}
+
+.main-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.dropdown li {
+    width: 100%; /* Fill width of dropdown */
+    text-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.main-nav li:hover .dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    /* transition-delay:.3s; */
+}
+.main-nav a:hover{
+    color: orange;
+    transition: .2s ease-in-out;
+}
+/* Responsive Styles */
+.menu-toggle {
+    display: none; /* Hidden on larger screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Adjust as needed */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+/* Main Body Styling */
+.them-body{
+    overflow-x: hidden;
+    font-family: Poppins, sans-serif;
+    
+}
+.them-body a{
+    text-decoration: none;
+   
+}
+.them-body li{
+    list-style: none;
+}
+.them-bodysub33{
+    background-image: url(Suit.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    backdrop-filter:blur(5px) brightness(0.8);
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* filter: brightness(0.7); */
+}
+.firstbody{
+    height: 105vh;
+    /* background-color: rebeccapurple; */
+    position: relative;
+    top:110px;
+    padding-left: 40px;
+    /* left: 30px; */
+}
+.firstbody h2{
+    font-size: 70px;
+    line-height: -20px;
+    color: white;
+  /* text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); */
+}
+.firstbody p{
+    font-size: 20px;
+    position: relative;
+    top:-30px;
+}
+.firstbody button{
+    padding: 15px 45px;
+    position: relative;
+    top: 20px;
+}
+.firstbody a button{
+    background-color: rgb(237, 187, 58);
+    border-radius: 10px;
+    border: none;
+}
+/* Best Service Section */
+.BestService{
+    align-items: center;
+    text-align: center;
+}
+.BestService h2{
+    font-size: 40px;
+}
+.BestService p{
+    color: orange;
+    font-size: 23px;
+}
+.BestService h2 span{
+    color: orange;
+}
+/* This styling is for the next part of the BestServices */
+.BestService2{
+    margin:0 50px ;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.BestService2-sub1{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.169);
+    margin: 40px 10px;
+}
+.BestService2-sub1 p{
+    color: gray;
+}
+/* This is the third part which contains The recognition and award */
+.Recodnition{
+    text-align: center;
+}
+.Recodnition p{
+    font-size: 20px;
+    color: orange;
+}
+.Recodnition h3{
+    font-size: 40px;
+}
+.TheRecondit{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 60px;
+    margin-bottom: 160px;
+   
+
+}
+.calll232{
+        display: none;
+    }
+.TheRecondit3-sub1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.TheRecondit3-sub1 h2{
+    font-size:22px;
+    position: relative;
+    top:-20px;
+    text-align: left;
+    font-weight: 300;
+}
+.TheRecondit3{
+       box-shadow: 0 18px 40px rgba(0, 0, 0, 0.068);
+    margin: 40px 10px;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+
+}
+.TheRecondit3 p{
+    position: relative;
+    right:-60px;
+    font-size: 18px;
+    text-align:left;
+    color: gray;
+}
+.Disclaimer-4{
+    margin:  60px;  
+    
+}
+.Disclaimer-4 h3{
+    text-decoration: underline;
+}
+.Disclaimer-4 p{
+    color: gray !important;
+}
+.the-foot{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    line-height: 30px;
+    margin: 0 50px;
+    position: relative;
+    left: 40px;
+    color: white;
+    /* background-color: ; */
+    /* width: 40%; */
+}
+.the-foot  a{
+    color: white;
+}
+.the-foot a:hover{
+    color: orange;
+    transition: .2s ease-in-out;
+    font-family: Poppins, sans-serif;
+}
+
+.the-foot h3{
+    margin: 40px 3px;
+    position: relative;
+    left: 20px;
+}
+.the-foot button{
+    padding: 20px;
+    border: none;
+    background: none;
+    color: white;
+    text-align: left;
+ position: relative;
+ left: -20px;
+    text-transform: uppercase;
+}
+.discarrr{
+    color: white !important;
+}
+
+.Kogin:hover{
+    background-color:purple !important;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+@media (max-width: 768px) { /* Example breakpoint */
+    .main-nav {
+        display: none; /* Hide on smaller screens */
+        flex-direction: column; /* Stack vertically */
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0; /* Match nav background */
+        text-align: center;
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .main-nav li {
+        margin: 10px 0; /* Vertical spacing */
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu button */
+    }
+
+    .container {
+        flex-direction: column; /* Stack logo and menu button */
+        align-items: flex-start; /* Align to the left */
+    }
+}
+@media screen and (width<=800px){
+    .them-bodysub33 nav{
+        z-index: 8000 !important;
+    }
+    .them-body{
+     overflow-x: hidden !important;
+    }   
+    .BestService2{
+        grid-template-columns: 1fr;
+    }
+    .TheRecondit{
+        grid-template-columns: 1fr;
+    }
+    .the-foot{
+        grid-template-columns: 1fr;
+        text-align: left;
+        position: relative;
+        left:-10%;
+    }
+    
+    .logo{
+        display: none;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .caslls{
+        text-wrap: nowrap;
+        padding: 10px;
+    }
+    .firstbody{
+        height:60vh;
+    }
+    .firstbody h2{
+        font-size: 35px;
+        position: relative;
+        left:-20px;
+        top:-90px;
+    }
+    .firstbody p{
+        font-size: 20px;
+        text-align: left;
+        position: relative;
+        left: -20px;
+        top:-93px;
+    }
+    .firstbody button{
+        position:relative;
+        top:-80px;
+        left: -20px;
+    }
+    .them-bodysub33{
+        background-size: cover;
+    }
+    .BestService h2{
+        font-size: 30px;
+    }
+    .BestService2{
+        width: 80%;
+        /* padding: 10px; */
+        /* margin: 0 10px; */
+    }
+
+.BestService2-sub1{
+    margin: 10px 0px;
+    position: relative;
+    left:-20px;
+}
+
+.TheRecondit3-sub1{
+    flex-direction:column;
+    /* padding: 0 80px; */
+    /* margin: 30px 20px !important; */
+}
+.TheRecondit3{
+    text-align: center;
+    align-items: center;
+    margin: 10px !important;
+    width: 100% !important;
+    position: relative;
+    left: -25px;
+}
+.TheRecondit3 h2{
+    text-align: center !important;
+    position: relative;
+    left:10px !important;
+}
+.TheRecondit3 p{
+    text-align: center !important;
+    position: relative;
+    left:-2px;
+}
+.Disclaimer-4{
+    margin: 20px;
+}
+.footaim p{
+    width: 150% !important;
+    margin: 10px 50px !important;
+    position: relative;
+    left: -50px;
+}
+.creditLer{
+    width:130% !important;
+    line-height: 35px;
+
+}
+.ServiceFoot{
+    margin-bottom: 40px;
+}
+.ServiceFoot1{
+    position:relative;
+    left:-30px;
+    margin-bottom: 20px;
+}
+.ServiceFoot3{
+    position: relative;
+    left:-30px;
+    margin-bottom: 30px;
+}
+.the-foot h3{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight:400;
+}
+.lastlogs{
+    left:-60px !important;
+}
+.lastlogs button{
+    width:300% !important;
+}
+.lastlogs3{
+    left: 80px !important;
+}
+.lastlogs3 button{
+    width:140% !important;
+}
+
+}
+@media (min-width:350px) and (max-width:470px) {
+    .lastlogs{
+        left:-40px !important;
+    }
+    .lastlogs button{
+        width:300% !important;
+    }
+    .lastlogs3{
+        left:120px !important;
+    }
+    .lastlogs3 button{
+        width:140% !important;
+    }
+}
+@media (min-width:380px) and (max-width:480px) {
+    .lastlogs{
+        left:-30px !important;
+    }
+    .lastlogs button{
+        width:380% !important;
+    }
+    .lastlogs3{
+        left:120px !important;
+    }
+    .lastlogs3 button{
+        width:180% !important;
+    }
+}
+@media (min-width:500px) and (max-width:800px){
+    .the-foot{
+        position: relative !important;
+        left: 50px !important;
+    }
+    .footaim p{
+        width:60% !important;
+    }
+    .ServiceFoot p{
+        width: 50% !important;
+    }
+}
+@media screen and (width<=450px) {
+    .firstbody p{
+        top:-120px !important;
+    }
+    .firstbody button{
+        top:-130px !important;
+    }
+}

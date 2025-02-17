@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sticky Nav with Blur Demo</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 2000px; /* Ensure enough height to scroll */
+      background: #f9f9f9;
+    }
+    /* Nav styles */
+    nav {
+      margin: 40px;
+      transition: all 0.3s ease;
+    }
+    nav.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 0.5rem 1rem;
+      display: block;
+    }
+    /* Dropdown styles */
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      min-width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    }
+    .dropdown:hover .dropdown-menu {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .dropdown-menu li a {
+      padding: 0.5rem 1rem;
+      color: #333;
+      display: block;
+    }
+    .dropdown-menu li a:hover {
+      background: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <nav id="mainNav">
+    <ul>
+      <li class="dropdown">
+        <a href="#">About ▼</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">About EEB</a></li>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Onboarding</a></li>
+          <li><a href="#">Sales Team</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Corporate Profile</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+  
+  <div style="padding: 20px;">
+    <h1>Scroll Down to See the Sticky Navigation</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nunc sit amet orci gravida
+      sollicitudin. Donec vehicula, nisl a iaculis gravida, lectus lectus sollicitudin nibh, vitae
+      placerat urna ex eu justo. Sed vel ex eget ipsum facilisis tempor. Mauris ultrices porta
+      libero, ut tempor augue aliquet ac. Suspendisse potenti. Duis vestibulum, sem nec convallis
+      porttitor, justo nunc fermentum augue, et lacinia ligula turpis ac ipsum. 
+    </p>
+    <p>
+      <!-- More filler text to enable scrolling -->
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Suspendisse potenti. Etiam nec ante non dolor tristique varius. Nulla facilisi. Curabitur eu
+      ligula ac purus pharetra convallis. Donec dictum vulputate ipsum, ac placerat odio viverra in.
+      Curabitur ac nisl vel justo vehicula feugiat. Quisque finibus velit et libero congue, ac semper
+      leo suscipit.
+    </p>
+    <!-- Add more content as needed -->
+  </div>
+  
+  <script>
+    window.addEventListener('scroll', function() {
+      const nav = document.getElementById('mainNav');
+      // When scrolled more than 40px, add sticky class
+      if (window.scrollY > 40) {
+        nav.classList.add('sticky');
+      } else {
+        nav.classList.remove('sticky');
+      }
+    });
+  </script>
+</body>
+</html>
