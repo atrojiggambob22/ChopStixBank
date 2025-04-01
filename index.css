@@ -494,11 +494,25 @@ nav {
         width: 50% !important;
     }
 }
-@media screen and (width<=450px) {
+@media screen and (width<=500px) {
     .firstbody p{
         top:-120px !important;
     }
     .firstbody button{
         top:-130px !important;
+    }
+    .bottomLogs{
+        position: relative;
+    top:92% !important;
+    
+    }
+
+}
+@media (min-width:400px) and (max-width:500px){
+    .bottomLogs{
+        top: 95% !important;
+    }
+    .lastlogs3{
+        width: 120% !important;
     }
 }
