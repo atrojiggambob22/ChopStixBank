@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     margin: 0;
+    overflow-x:hidden;
 }
 
 nav {
@@ -316,13 +317,25 @@ nav {
     }
 }
 @media screen and (width<=800px){
+    .creditLer{
+        /* padding:0px 0px 0px 10px ; */
+    }
+    .creditLer li{
+        width:90px !important;
+    }
+    .htonep{
+        /* margin:10px 10px !important; */
+        /* max-width:50px !important; */
+    }
     .them-bodysub33 nav{
+   
         z-index: 8000 !important;
     }
     .them-body{
      overflow-x: hidden !important;
     }   
     .BestService2{
+        /* margin:0px 10px 20px 0px!important; */
         grid-template-columns: 1fr;
     }
     .TheRecondit{
@@ -356,6 +369,7 @@ nav {
         top:-90px;
     }
     .firstbody p{
+        
         font-size: 20px;
         text-align: left;
         position: relative;
@@ -411,11 +425,21 @@ nav {
 .Disclaimer-4{
     margin: 20px;
 }
-.footaim p{
-    width: 150% !important;
-    margin: 10px 50px !important;
+.footaim{
+    margin:0px !important;
     position: relative;
-    left: -50px;
+    right: 3px;
+}
+.footaim p{
+    /* margin-right:-auto !important; */
+    width: 150% !important;
+    margin: 10px 0px !important;
+    position: relative;
+    left: -60px;
+}
+.theonlyp{
+    position: relative;
+    left:-90px !important;
 }
 .creditLer{
     width:130% !important;
@@ -444,7 +468,7 @@ nav {
     left:-60px !important;
 }
 .lastlogs button{
-    width:300% !important;
+    width:270% !important;
 }
 .lastlogs3{
     left: 80px !important;
@@ -453,6 +477,11 @@ nav {
     width:140% !important;
 }
 
+}
+@media screen and (width<=650pc){
+   .them-body{
+    overflow-x:hidden;
+   } 
 }
 @media (min-width:350px) and (max-width:470px) {
     .lastlogs{
@@ -488,7 +517,7 @@ nav {
         left: 50px !important;
     }
     .footaim p{
-        width:60% !important;
+        width:50% !important;
     }
     .ServiceFoot p{
         width: 50% !important;
