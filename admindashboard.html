@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="admindashboard.css">
+  <!-- <link stylesheet=""/> -->
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Admin</h2>
+    </div>
+    <ul>
+      <li><a href="admindashboard.html"><span class="icon">🏠</span><span class="title">Dashboard</span></a></li>
+      <li><a href="admin2dashboard.html"><span class="icon">➕</span><span class="title">New Account</span></a></li>
+      <li><a href="postnotice.html"><span class="icon">📢</span><span class="title">Post Notice</span></a></li>
+      <li><a href="Sendletter.html"><span class="icon">✉️</span><span class="title">Send Newsletter</span></a></li>
+      <hr />
+      <li><a href="adminnsetting.html"><span class="icon">⚙️</span><span class="title">Admin Settings</span></a></li>
+      <li><a href="WalletSetting.html"><span class="icon">💰</span><span class="title">Wallet Settings</span></a></li>
+      <li><a href="FaqSetting.html"><span class="icon">❓</span><span class="title">FAQs Settings</span></a></li>
+      <li><a href="Testimonials.html"><span class="icon">💬</span><span class="title">Testimonials</span></a></li>
+      <li><a href="Aboutus.html"><span class="icon">ℹ️</span><span class="title">About Us</span></a></li>
+      <li><a href="Emailsetting.html"><span class="icon">📧</span><span class="title">Email Settings</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Top bar / header -->
+    <header>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <h1>Admin Dashboard</h1>
+      <div class="header-right">
+        <button class="btn-toggle-dark" id="btnToggleDark">Night Mode</button>
+        <button class="btn-logout">Logout</button>
+      </div>
+    </header>
+
+    <!-- Dashboard content -->
+    <section class="dashboard-content">
+      <div class="notification">
+        <h2>Notification</h2>
+        <p>You have 5 unread messages.</p>
+      </div>
+
+      
+      <div class="BAba-ACC" style="z-index: 9;">
+
+        <div style="display: flex; justify-content: space-between;"> 
+          <div><i class="fas fa-accessible-icon    "></i>
+          <h3>All Accounts</h3>
+          
+
+          </div>
+
+          <div>
+     <!-- Create Account Button -->
+     <button class="create-btn" id="createBtn">Create Account</button>
+    
+     <!-- The Form (Hidden by Default) -->
+     <div  class="form-container" id="formContainer">
+       <form action="mailto:Eedykamana75@gmail.com">
+    
+           <h2>Create Account</h2>
+           <div class="form-group">
+             <label for="accountID">Account ID</label>
+             <input type="text" id="accountID" placeholder="Auto-generated or manually set">
+           </div>
+           <div class="form-group">
+             <label for="fullName">Full Name</label>
+             <input type="text" id="fullName" placeholder="Enter full name">
+           </div>
+           <div class="form-group">
+             <label for="email">Email</label>
+             <input type="email" id="email" placeholder="Enter email address">
+           </div>
+           <div class="form-group">
+             <label for="checkingBalance">Checking Account Balance</label>
+             <input type="number" id="checkingBalance" placeholder="0.00">
+           </div>
+           <div class="form-group">
+             <label for="savingsBalance">Savings Account Balance</label>
+             <input type="number" id="savingsBalance" placeholder="0.00">
+           </div>
+           <div class="form-group">
+             <label for="accountType">Account Type</label>
+             <select id="accountType">
+               <option value="Savings">Savings</option>
+               <option value="Checking">Checking</option>
+               <option value="Business">Business</option>
+             </select>
+           </div>
+           <div class="form-group">
+             <label for="password">Account Password</label>
+             <input type="password" id="password" placeholder="Enter password">
+           </div>
+           <div class="form-group">
+             <label for="phone">Phone</label>
+             <input type="tel" id="phone" placeholder="Enter phone number">
+           </div>
+           <div class="form-group">
+             <label for="address">Address</label>
+             <input type="text" id="address" placeholder="Street, City, ZIP">
+           </div>
+           <div class="form-group">
+             <label for="occupation">Occupation</label>
+             <input type="text" id="occupation" placeholder="Enter occupation">
+           </div>
+           <div class="form-group">
+             <label for="cot">COT Code</label>
+             <input type="text" id="cot" placeholder="Enter COT code">
+           </div>
+           <div class="form-group">
+             <label for="cardExpiry">Credit Card Expiry (Month/Year)</label>
+             <input type="text" id="cardExpiry" placeholder="MM/YY">
+           </div>
+    
+           <button class="submit-btn">Submit</button>
+         </div>
+          </div>
+         
+        </div>
+         <hr>
+         <div >
+                      <div style="display: flex; justify-content: space-between;">
+                        
+                        <div style="display: flex; gap: 20px;">
+                          <p>Show</p>
+                          <div>
+                            <label for="dropdown">10</label>
+                          </div>
+                          <p>Entries</p>
+                        </div>
+
+                        <div  style="display: flex; gap: 30px;">
+                          <p>Search</p>
+                          <input type="text">
+                        </div>
+                      </div>
+
+                        <div>
+                          <div><button>select all</button></div>
+                          
+                          <div class="Accdetails">
+                            <div>
+                              <h4>Account ID</h4>
+                            </div>
+                            <div>
+                              <h4>Name</h4>
+                            </div>
+                            <div>
+                              <h4>Email</h4>
+                            </div>
+                            <div>
+                              <h4>Created</h4>
+                            </div>
+                            <div>
+                              <h4>Account Status</h4>
+                            </div>
+                            <div>
+                              <h4>Checking</h4>
+                            </div>
+                            <div>
+                              <h4>Savings</h4>
+                            </div>
+                            <div>
+                              <h4>Action</h4>
+                            </div>
+                            <div>
+                              <h4 id="Account-ID"></h4>
+                            </div>
+                            <div>
+                              <h4 id="Name"></h4>
+                            </div>
+                            <div>
+                              <h4 id="Email"></h4>
+                            </div>
+                            <div>
+                              <h4 Created></h4>
+                            </div>
+                            <div>
+                              <h4 id="Account-Status"></h4>
+                            </div>
+                            <div>
+                              <h4 id="Checking"></h4>
+                            </div>
+                            <div>
+                              <h4 id="Savings"></h4>
+                            </div>
+                            <div>
+                              <h4 id="Action"></h4>
+                            </div>
+                          </div>
+
+                          <div class="Accdetails-btns" style="display: flex; gap: 20px; align-items: center;
+                          text-align: center;">
+                            <button>Previous</button>
+                            <button>Next</button>
+                          </div>
+                        </div>
+         </div>
+      </div>
+      <br>
+      
+     <div style="display: flex;justify-content:space-between;margin-top:60px">
+      <div class="card">
+        <h3>Total Users</h3>
+        <p>0</p>
+      </div>
+
+      <div class="card">
+        <h3>Last Registered User</h3>
+        <p>None</p>
+      </div>
+
+     </div>
+        </section>
+      
+        </form>
+    </div> 
+
+  <script>
+    // Toggle sidebar on mobile
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+
+    // Show / Hide Create Account Form
+    const createBtn = document.getElementById('createBtn');
+    const formContainer = document.getElementById('formContainer');
+    createBtn.addEventListener('click', () => {
+      formContainer.classList.toggle('active');
+      // Scroll down to the form when it's shown
+      if (formContainer.classList.contains('active')) {
+        formContainer.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    // Night Mode Toggle
+    const btnToggleDark = document.getElementById('btnToggleDark');
+    btnToggleDark.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      // Update button text
+      if (document.body.classList.contains('dark-mode')) {
+        btnToggleDark.textContent = "Light Mode";
+      } else {
+        btnToggleDark.textContent = "Night Mode";
+      }
+    });
+  </script>
+</body>
+</html>

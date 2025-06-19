@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Management</title>
+    <link rel="stylesheet" href="test2.css">
+</head>
+<body>
+
+    <h2 class="header">Payment Gateways</h2>
+
+    <div class="container">
+        <!-- Left Side: Add New Wallet Form -->
+        <div class="form-container">
+            <h3>Add New Wallet</h3>
+            <p class="warning">Always indicate the Network and Paste the right wallet address to avoid loss of funds</p>
+            <form>
+                <label for="wallet-name">Wallet Name</label>
+                <input type="text" id="wallet-name" placeholder="Enter Wallet Name">
+
+                <label for="wallet-code">Wallet Code</label>
+                <input type="text" id="wallet-code" placeholder="e.g. btc, eth, ltc, usdt...">
+
+                <label for="wallet-address">Wallet Address</label>
+                <input type="text" id="wallet-address" placeholder="Enter Wallet Address">
+
+                <label for="generate-barcode">Generate Barcode</label>
+                <select id="generate-barcode">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+
+                <label for="admin-password">Admin Password*</label>
+                <input type="password" id="admin-password" placeholder="Enter Admin Password">
+
+                <button type="submit" class="add-wallet-btn">Add Wallet</button>
+            </form>
+        </div>
+
+        <!-- Right Side: Manual Deposit Wallets Table -->
+        <div class="table-container">
+            <h3>Manual Deposit Wallets</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Updated</th>
+                        <th>Code</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bitcoin (BTC)</td>
+                        <td><span class="status-active">Active</span></td>
+                        <td>16th May, 2023 05:18 AM</td>
+                        <td>BTC</td>
+                        <td>
+                            <button class="deactivate">Deactivate</button>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
