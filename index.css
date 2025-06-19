@@ -6,7 +6,8 @@ body {
 
 nav {
     background-color: #f0f0f0; /* Example background color */
-    padding:13px;
+    padding:5px;
+   
     margin: 0px 90px;
     position: relative;
     top: 30px;
@@ -40,6 +41,7 @@ nav {
     margin: 0;
     padding: 0;
     display: flex; /* Horizontal on larger screens */
+    border-radius: 0px 0px 20px 20px;
 }
 
 .main-nav li {
@@ -287,6 +289,9 @@ nav {
     transition: .1s ease-in-out;
     cursor: pointer;
 }
+.bottomLogs{
+    display: none !important;
+}
 @media (max-width: 768px) { /* Example breakpoint */
     .main-nav {
         display: none; /* Hide on smaller screens */
@@ -458,7 +463,9 @@ nav {
     position: relative;
     left:-30px;
     margin-bottom: 30px;
+     /* border-radius: 20px 0 20px 20px; */
 }
+
 .the-foot h3{
     margin: 10px 0;
     font-size: 30px;
@@ -475,6 +482,9 @@ nav {
 }
 .lastlogs3 button{
     width:140% !important;
+}
+.bottomLogs{
+    display: none !important;
 }
 
 }
